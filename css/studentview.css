@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    background-color:#292F33;
+    font-family: 'Calibri';
+}
+#bg {
+    background-color: #292F33;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: 'Calibri';
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: cyan;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#btNav {
+    font-size:18px;
+    cursor:pointer;
+    color: #ff0066;
+    transition: font-size .3s;
+}
+#btNav:hover {
+    transform: scale(1.1);
+    font-size:19px;
+    cursor:pointer;
+    color: white;
+}
+.pn {
+    margin: 0;
+    font-family: 'Calibri light';
+    font-size: 12px;
+    color: dodgerblue;
+}
+#lspul {
+    font-family: 'Calibri';
+    font-size: 35px;
+    color: dodgerblue;
+}
+#lbdate {
+    font-family: 'Calibri light';
+    font-size: 12px;
+    color: white;
+}
+#crd1 {
+    background: linear-gradient(to bottom left, #ff0066 10%, #cc0066 10%);
+    transition: transform .5s;
+    transform: scale(.9);
+    border: 0;
+    cursor: pointer;
+}
+#crd1:hover {
+    background: linear-gradient(to bottom left, white 10%, #cc0066 10%);
+    transform: scale(1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.lbCr {
+    color: white;
+    font-family: 'Calibri';
+    font-size: 15px;
+    margin: 0;
+}
+#psub
+{
+    font-family: 'Calibri light';
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: gainsboro;
+}
+.btnVs {
+    font-family: 'Calibri light';
+    width: 100%;
+    background-color: seagreen;
+    height: 35px;
+    border: 0;
+    border-radius: 25px;
+    color: white;
+    transition: box-shadow .5s;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btnVs:hover {
+    font-family: 'Calibri light';
+    width: 100%;
+    background-color: seagreen;
+    height: 35px;
+    border: 0;
+    border-radius: 25px;
+    color: white;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.txtser{
+    border: 0;
+    width: 14%;
+    height: 30px;
+    padding: 10px;
+    outline: none;
+    font-family: 'Calibri light';
+    font-size: 12px;
+    border-radius: 25px;
+    background-color: white;
+    background-image: url('../img/128px/searchicon.png');
+    background-repeat: no-repeat;
+    background-position: 10px 4px;
+    transition: width 1s;
+    padding-left: 40px;
+}
+.txtser:focus{
+    border: 0;
+    width: 40%;
+    height: 30px;
+    padding: 10px;
+    outline: none;
+    padding-left: 40px;
+    font-family: 'Calibri light';
+    font-size: 12px;
+    border-radius: 25px;
+    background-color: white;
+    background-image: url('../img/128px/searchicon.png');
+    background-repeat: no-repeat;
+    background-position: 10px 4px;
+}
+.bts {
+    border: 0;
+    height: 35px;
+    padding: 10px;
+    outline: none;
+    font-family: 'Calibri light';
+    font-size: 12px;
+    border-radius: 45px;
+    background-color: dodgerblue;
+    color: white;
+}
+.btnNav {
+    border: 0;
+    width: 90px;
+    background-color: dodgerblue;
+    font-family: 'Calibri light';
+    font-size: 12px;
+    height: 29px;
+    color: white;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgb(32,32,32), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: box-shadow .5s;
+}
+.btnNav:hover {
+    border: 0;
+    width: 90px;
+    background-color: dodgerblue;
+    font-family: 'Calibri light';
+    font-size: 12px;
+    height: 29px;
+    color: white;
+    border-radius: 25px;
+    outline: none;
+    box-shadow: 0 14px 18px 0 rgb(32,32,32), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+ @keyframes unfoldIn {
+ 0% {
+    transform:translateX(-1500px) skewX(30deg) scaleX(1.3);
+  }
+  70% {
+    transform:translateX(30px) skewX(0deg) scaleX(.9);
+  }
+  100% {
+    transform:translateX(0px) skewX(0deg) scaleX(1);
+  }
+}
+
+@keyframes unfoldOut {
+  0% {
+    transform:scaleY(1) scaleX(1);
+  }
+  50% {
+    transform:scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform:scaleY(.005) scaleX(0);
+  }
+}
+.unfoldIn
+{
+    animation:unfoldIn 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+.unfoldOut
+{
+    animation:unfoldOut 2s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+}
+#reserved {
+    font-family: 'Calibri';
+    font-size: 10px;
+    color: gainsboro;
+}

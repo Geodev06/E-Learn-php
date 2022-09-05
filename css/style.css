@@ -1,0 +1,439 @@
+.mytb1 
+{
+		
+}
+.inp
+{
+	display: block;
+	width: 100%;
+	font-family: 'Calibri';
+	font-size: 16px;
+	padding: 8px;
+	border-radius:25px;
+	border:0;
+	background-color: white;
+	outline: none;
+	color: dodgerblue;
+	transition: border 0.5s;
+}
+.inp:focus
+{
+	display: block;
+	width: 100%;
+	font-family: 'Calibri';
+	font-size: 16px;
+	padding: 8px;
+	border-radius:25px;
+	border:0;
+	background-color: ghostwhite;
+	outline: none;
+	color: dodgerblue;
+}
+#txtuser
+{
+    background-image: url('../img/128px/profle.png');
+    background-position: 10px 6px;
+    background-size: 30px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+#txtpass
+{
+    background-image: url('../img/128px/locked.png');
+    background-position: 10px 6px;
+    background-size: 30px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+body
+{
+	background-color: gainsboro;
+}
+.smp
+{
+	font-size: 12px;
+}
+#menu
+{
+	position: absolute;
+	top:20px;
+	right: 20px;
+}
+#btshowsign
+{
+	border:0;
+	border-radius: 25px;
+	height: 35px;
+	font-family: 'Calibri';
+	outline: none;
+	font-size: 12px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: white;
+	width: 170px;
+	background-color: seagreen;
+	transition: box-shadow 0.5s;
+	transition: background-color: 1s;
+	 background-image: url('../img/qry.png');
+    background-position: 10px 8px;
+    background-size: 20px; 
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+#btshowsign:hover
+{
+	box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 30px 0 rgba(0, 0, 0, 0.19);
+	border:0;
+	border-radius: 25px;
+		background-color: #00994d;
+	height: 35px;
+	font-family: 'Calibri';
+	outline: none;
+	font-size: 12px;
+	color: white;
+	width: 170px;
+}
+#lb{
+	font-size: 60px;
+	font-family: 'Calibri';
+	color:  rgb(32,32,32);
+	padding: 0;
+	margin: 0;
+}
+#lspu
+{
+	font-family: 'Calibri';
+	font-size: 12px;
+	letter-spacing: 4px;
+	color: rgb(32,32,32);
+
+}
+.mybtn
+{
+	border:0;
+	border-radius: 25px;
+	height: 35px;
+	width: 50%;
+	font-family: 'Calibri';
+	outline: none;
+	font-size: 12px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: white;
+	background-color: dodgerblue;
+	transition: box-shadow 0.5s;
+	 background-image: url('../img/ok.png');
+    background-position: 10px 8px;
+    background-size: 20px; 
+    background-repeat: no-repeat;
+    padding-left: 20px;	
+}
+.mybtn:hover
+{
+	box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 30px 0 rgba(0, 0, 0, 0.19);
+	border:0;
+	border-radius: 25px;
+	height: 35px;
+	font-family: 'Calibri';
+	outline: none;
+	font-size: 12px;
+	color: white;
+}
+.lnk
+{
+	font-family: 'Calibri';
+	font-size: 10px;
+	color: black;
+}
+.unfold{
+	transform: scale(1);
+	animation: unfoldIn 1s cubic-bezier(0.165,0.840,0.440,1.000) forwards;
+}
+#ppp{
+	cursor: pointer;
+}
+#ppp:hover{
+	cursor: pointer;
+	color: dodgerblue;
+}
+@keyframes unfoldIn
+{
+	0%{transform: scaleY(.005)scaleX(0);}
+	50%{transform: scaleY(.005)scaleX(1);}
+	100%{transform: scaleY(1)scaleX(1);}
+}
+.fadeOut
+{
+	opacity: 1;
+	animation: fadeOut 1s;
+}
+@keyframes fadeOut
+{
+	from{opacity: 1;}
+	to{opacity: 0;}
+}
+#reserved {
+	font-family: 'Calibri';
+	font-size: 10px;
+	color: gainsboro;
+}
+#mul
+{
+	font-family: 'Calibri';
+	font-size: 10px;
+	letter-spacing: 1px;
+	color: white;
+}
+#mul li
+{
+	padding-top: 6px;
+	font-family: 'Calibri';
+	font-size: 10px;
+	letter-spacing: 1px;
+	color: black;
+}
+#divsignup
+{
+	display: none;
+	height: 300px;
+	width: 300px;
+}
+#divlog {
+	height: 300px;
+	width: 300px;
+}
+.cb
+{
+	outline: none;
+	width: 100%;
+	font-family: 'Calibri';
+	font-size: 16px;
+	padding: 8px;
+	border-radius:25px;
+	border:0;
+	background-color: white;
+	outline: none;
+	color: dodgerblue;
+	transition: border 0.5s;
+}
+.cb:focus
+{
+	display: block;
+	width: 100%;
+	font-family: 'Calibri';
+	font-size: 16px;
+	padding: 8px;
+	border-radius:25px;
+	border:0;
+	outline: none;
+	color: dodgerblue;
+}
+#lbl{
+	color: white;
+	font-size: 16px;
+	font-family: 'Calibri light';
+}
+#pp{
+	font-family: 'Calibri light';
+	font-size: 11px;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+.mybtnA
+{
+	border:0;
+	border-radius: 25px;
+	height: 35px;
+	width: 50%;
+	font-family: 'Calibri';
+	outline: none;
+	font-size: 12px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: white;
+	background-color: #C32148;
+	transition: box-shadow 0.5s;
+	 background-image: url('../img/ok.png');
+    background-position: 10px 8px;
+    background-size: 20px; 
+    background-repeat: no-repeat;
+    padding-left: 20px;	
+}
+.mybtnA:hover
+{
+	box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 30px 0 rgba(0, 0, 0, 0.19);
+	border:0;
+	border-radius: 25px;
+	height: 35px;
+	font-family: 'Calibri';
+	outline: none;
+	font-size: 12px;
+	color: white;
+}
+#txtuserR{
+	 background-image: url('../img/128px/profle.png');
+    background-position: 10px 6px;
+    background-size: 30px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+#txtpassR {
+ background-image: url('../img/user.png');
+    background-position: 10px 6px;
+    background-size: 30px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+#txtno {
+	 background-image: url('../img/128px/interstate.png');
+    background-position: 10px 6px;
+    background-size: 30px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+#main
+{
+	position: absolute;
+	left: 250px;
+	top: 20px;
+}
+#txtuserR1{
+	height: 35px;
+	font-size: 12px;
+	 background-image: url('../img/128px/profle.png');
+    background-position: 10px 5px;
+    background-size: 25px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+#txtuserR11{
+	height: 35px;
+	font-size: 12px;
+	 background-image: url('../img/128px/profle.png');
+    background-position: 10px 5px;
+    background-size: 25px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+#txtuserR111{
+	height: 35px;
+	font-size: 12px;
+	 background-image: url('../img/128px/profle.png');
+    background-position: 10px 5px;
+    background-size: 25px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+#txtuserREC{
+	height: 35px;
+	font-size: 12px;
+	 background-image: url('../img/128px/interstate.png');
+    background-position: 10px 5px;
+    background-size: 25px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+#txtuserR2{
+	height: 35px;
+	font-size: 12px;
+	 background-image: url('../img/128px/present.png');
+    background-position: 10px 5px;
+    background-size: 25px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+#txtuserRE{
+	height: 35px;
+	font-size: 12px;
+	 background-image: url('../img/128px/email.png');
+    background-position: 10px 5px;
+    background-size: 25px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+#txtuserRC{
+	height: 35px;
+	font-size: 12px;
+
+	 background-image: url('../img/128px/stack.png');
+    background-position: 10px 5px;
+    background-size: 25px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+#txtuserRT{
+	height: 35px;
+	font-size: 12px;
+
+	 background-image: url('../img/128px/profle.png');
+    background-position: 10px 5px;
+    background-size: 25px; 
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+#pp1 {
+	font-family: 'Calibri';
+	font-size: 13px;
+}
+.lblr {
+	font-size: 14px;
+	font-family: 'Calibri light';
+	color: white;
+}
+.mybtnD
+{
+	border:0;
+	border-radius: 25px;
+	height: 25px;
+	width: 100px;
+	font-family: 'Calibri';
+	outline: none;
+	font-size: 12px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: white;
+	background-color:  #292F33;
+	transition: box-shadow 0.5s;
+	 background-image: url('../img/ok.png');
+    background-position: 10px 3px;
+    background-size: 20px; 
+    background-repeat: no-repeat;
+    padding-left: 20px;	
+}
+.mybtnD:hover
+{
+	box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 30px 0 rgba(0, 0, 0, 0.19);
+	border:0;
+	border-radius: 25px;
+	height: 25px;
+	font-family: 'Calibri';
+	outline: none;
+	font-size: 12px;
+	color: white;
+}
+#mybtnDN {
+	background-image: url('../img/del.png');
+    background-position: 10px 3px;
+    background-size: 20px; 
+    background-repeat: no-repeat;
+    padding-left: 20px;	
+}
+.modal {
+	background-color: rgba(45,45,45,0.20);
+}
+.prmText {
+	font-family: 'Calibri light';
+	font-size: 12px;
+	color: white;
+}
+#M_dialog {
+	border: 0;
+	box-shadow: 0 14px 18px 0 rgb(32,32,32), 0 16px 30px 0 rgba(0, 0, 0, 0.19);
+}
+#M_dialogc {
+	border: 0;
+	background-color: #C32148;
+}
+
+.prmH {
+	font-family: 'Calibri light';
+	font-size: 35px;
+
+}

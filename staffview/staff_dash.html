@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Dashboard</title>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/icons.css">
+	<link rel="stylesheet" type="text/css" href="../vendor/fontawesome-free/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/staffdash.css">
+  	<link rel="stylesheet" type="text/css" href="../css/modal.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/staff_dash.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</head>
+<body onload="Datetime()">
+<div class="container">
+		<div id="sidenav">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div id="profile_pic" class="text-center pt-5">
+							<img src="../img/profile.jpg" style="max-height: 100px; max-width: 100px" class="rounded-circle shadow-lg" id="profile">
+							<h6 id="name">Mr User</h6>
+							<p id="lbad">Staff</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center" style="cursor: pointer;">
+                <i class="glyphicon glyphicon-envelope text-white icc"><span class="badge badge-success">!</span></i>
+                <i class="glyphicon glyphicon-bell text-white icc "><span class="badge badge-primary">!</span></i>
+                <i class="glyphicon glyphicon-list  text-white icc"><span class="badge badge-danger">!</span></i>
+    </div>
+			<hr class="bg-secondary">
+			<ul id="ull">
+			  <li><input type="button" name="" value="Dashboard" class="btns active" id="btndash"></li>
+			  <li><input type="button" name="" value="My Schedule" class="btns" id="btnMc"></li>
+			  <li><input type="button" name="" value="My Class" class="btns" id="btnMs"></li>
+			  <li><input type="button" name="" value="Set Projects" class="btns" id="btnMa"></li>
+			  <li><input type="button" name="" value="Account Settings" class="btns" id="btnAcc"></li>
+			  <li><input type="button" name="" value="Logout" class="btns" id="btnlogout"></li>
+			</ul>
+			<div class="text-center">
+				<i class="glyphicon glyphicon-chevron-left" id="pnlc"></i>
+				<i class="glyphicon glyphicon-chevron-right" id="pnlcS"></i>
+			</div>
+		</div>
+		<div id="top" >
+            <h6 class="text-right text-white pt-5 pr-3" id="logo">E-Learning System</h6>
+		</div>
+		<div id="main" class="p-5 unfold">
+			<h2 id="ls">Laguna State Polytechnic University</h2>
+				<p id="ls">San Pablo City Campus</p>
+					<img src="../img/128px/calendar.png" style="max-height: 60px;"><span> </span><p style="display: inline;" id="lbdate"></p>
+				<hr>
+				<div class="row unfoldIn">
+		            <div class="col-xl-3 col-md-6 mb-4">
+		              <div class="card h-100 py-2" id="card1">
+		                <div class="card-body">
+		                  <div class="row no-gutters align-items-center">
+		                    <div class="col mr-2">
+		                      <div class="text-xs mb-1" id="hd">My Subjects</div>
+		                      <div class="h5 mb-0 text-xs"><p id="lbcons">Computer Programming1<br>JavaScript</p></div>
+		                    </div>
+		                    <div class="col-auto">
+		                      <i class="fas fa-book fa-2x text-secondary"></i>
+		                    </div>
+		                  </div>
+		                  <hr>
+		                  <input type="button" value="view" class="btnV">
+		                </div>
+		              </div>
+		            </div>
+		            <div class="col-xl-3 col-md-6 mb-4">
+		              <div class="card h-100 py-2" id="card1">
+		                <div class="card-body">
+		                  <div class="row no-gutters align-items-center">
+		                    <div class="col mr-2">
+		                      <div class="text-xs mb-1" id="hd">My Students</div>
+		                      <div class="h5 mb-0 text-xs"><p id="lbcons">Rate their performance. Give them awards!</p></div>
+		                    </div>
+		                    <div class="col-auto">
+		                      <i class="fas fa-user-graduate fa-2x text-secondary"></i>
+		                    </div>
+		                  </div>
+		                  <hr>
+		                  <input type="button" value="view" class="btnV">
+		                </div>
+		              </div>
+		            </div>
+		            <div class="col-xl-3 col-md-6 mb-4">
+		              <div class="card h-100 py-2" id="card1">
+		                <div class="card-body">
+		                  <div class="row no-gutters align-items-center">
+		                    <div class="col mr-2">
+		                      <div class="text-xs mb-1" id="hd">Pending request</div>
+		                      <div class="h5 mb-0 text-xs"><p id="lbcons">Notification<br>Message request</p></div>
+		                    </div>
+		                    <div class="col-auto">
+		                      <i class="fas fa-comments fa-2x text-secondary"></i>
+		                    </div>
+		                  </div>
+		                  <hr>
+		                  <input type="button" value="view" class="btnV">
+		                </div>
+		              </div>
+		            </div>
+		            <div class="col-xl-3 col-md-6 mb-4">
+		              <div class="card h-100 py-2" id="card1">
+		                <div class="card-body">
+		                  <div class="row no-gutters align-items-center">
+		                    <div class="col mr-2">
+		                      <div class="text-xs mb-1" id="hd">Announcements</div>
+		                      <div class="h5 mb-0 text-xs"><p id="lbcons">Upcoming events <br>Head's up!</p></div>
+		                    </div>
+		                    <div class="col-auto">
+		                      <i class="fas fa-volume-up fa-2x text-secondary"></i>
+		                    </div>
+		                  </div>
+		                  <hr>
+		                  <input type="button" value="view" class="btnV">
+		                </div>
+		              </div>
+		            </div>
+         	 </div>
+    	</div>
+	</div>
+</body>
+</html>

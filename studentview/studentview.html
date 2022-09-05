@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Dashboard</title>
+	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/icons.css">
+	<link rel="stylesheet" type="text/css" href="../vendor/fontawesome-free/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/studentview.css">
+  <link rel="stylesheet" type="text/css" href="../css/modal.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/studentview.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</head>
+<body onload="Datetime()">
+<div id="mySidenav" class="sidenav unfoldIn">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="btclose">&times;</a>
+  <a href="#"><i class="glyphicon glyphicon-dashboard"></i> Dashboard</a>
+  <a href="#"><i class="glyphicon glyphicon-book"></i> My Courses</a>
+  <a href="#"><i class="glyphicon glyphicon-pencil"></i> Projects and Assigments</a>
+  <a href="#"><i class="fas fa-user-clock"></i> Schedule</a>
+  <a href="#"><i class="glyphicon glyphicon-star"></i> Performace</a>
+    <a href="#"><i class="glyphicon glyphicon-envelope"></i> Inbox</a>
+  <a href="#"><i class="fas fa-user-friends"></i> Friend's list</a>
+  <a href="#"><i class="fas fa-user-tie"></i> My mentors</a>
+  <a href="#"><i class="glyphicon glyphicon-cog"></i> Account setting</a>
+  <a href="#"><i class="glyphicon glyphicon-info-sign"></i> Terms/Condidtions</a>
+  <a href="#"><i class="glyphicon glyphicon-question-sign"></i> About developer</a>
+  <a href="#"><i class="glyphicon glyphicon-log-out"></i> Sign out</a>
+</div>
+
+<div id="main">
+ 	<div class="container" id="bg">
+ 	  	<div class="row">
+ 	  		<div class="col-md-3 pt-3">
+	 	  			<div class="text-center">
+	 	  				<img src="../img/profile.jpg" style="max-height: 200px" class="shadow-lg rounded-circle">
+	 	  			<div>
+	 	  				<br>
+	 	  				<h6 class="text-white">Mr. juan Dela cruz</h6>
+	 	  				<p class="pn">Student</p>
+	 	  				<p class="pn">BS Computer Science</p>
+	 	  			</div>
+	 	  			</div>
+	 	  		<br>
+	 	  		<div class="text-center">
+	 	  			<input type="button" name="" onclick="openNav()" class="btnNav" value="Open menu">
+	 	  		</div>
+ 	  		</div>
+ 	  		<div class="col-md-8 pt-3">
+ 	  			<div class="p-5">
+ 	  				<h1 id="lspul">Laguna State Polytechnic University</h1>
+ 	  				<p class="text-secondary">San Pablo city Campus</p>
+ 	  				<h6 id="lbdate"></h6>
+ 	  			</div>
+ 	  		</div>
+ 	  	</div>
+ 	  				<div class="">
+ 	  					<div class="text-right">
+ 	  						<form class="">
+ 	  							<input type="text" name="" class="txtser" placeholder="Search">
+ 	  							<input type="button" name="" value="Go!" class="bts">
+ 	  						</form>
+ 	  					</div>
+ 	  				</div>
+ 	  	<hr class="bg-danger">
+ 	  	<div class="row">
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100 py-2" id="crd1">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1"><p class="lbCr">My Courses</p></div>
+                      <div class="mb-0 font-weight-bold"><p id="psub">JavaScript</p></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-book fa-5x text-white shadow-lg"></i>
+                    </div>
+                  </div>
+                  <hr class="bg-white">
+                  <input type="button" name="" class="btnVs" value="view">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100 py-2" id="crd1">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1"><p class="lbCr">My Assigments | Projects</p></div>
+                      <div class="mb-0 font-weight-bold"><p id="psub">Project Insight</p></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="glyphicon glyphicon-pencil fa-5x text-white"></i>
+                    </div>
+                  </div>
+                  <hr class="bg-white">
+                  <input type="button" name="" class="btnVs" value="view">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100 py-2" id="crd1">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1"><p class="lbCr">EVENTS</p></div>
+                      <div class="mb-0 font-weight-bold"><p id="psub">Be updated!</p></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="glyphicon glyphicon-volume-up fa-5x text-white"></i>
+                    </div>
+                  </div>
+                  <hr class="bg-white">
+                  <input type="button" name="" class="btnVs" value="view">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100 py-2" id="crd1">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1"><p class="lbCr">My Schedule</p></div>
+                      <div class="mb-0 font-weight-bold"><p id="psub">View your schedule today!</p></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="glyphicon glyphicon-time fa-5x text-white"></i>
+                    </div>
+                  </div>
+                  <hr class="bg-white">
+                  <input type="button" name="" class="btnVs" value="view">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100 py-2" id="crd1">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1"><p class="lbCr">My Performance</p></div>
+                      <div class="mb-0 font-weight-bold"><p id="psub">See your status now!</p></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="glyphicon glyphicon-heart fa-5x text-white"></i>
+                    </div>
+                  </div>
+                  <hr class="bg-white">
+                  <input type="button" name="" class="btnVs" value="view">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100 py-2" id="crd1">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1"><p class="lbCr">Messages</p></div>
+                      <div class="mb-0 font-weight-bold"><p id="psub">JavaScript</p></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="glyphicon glyphicon-envelope fa-5x text-white"></i>
+                    </div>
+                  </div>
+                  <hr class="bg-white">
+                  <input type="button" name="" class="btnVs" value="view">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100 py-2" id="crd1">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1"><p class="lbCr">Friends list</p></div>
+                      <div class="mb-0 font-weight-bold"><p id="psub">JavaScript</p></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-user-friends fa-5x text-white"></i>
+                    </div>
+                  </div>
+                  <hr class="bg-white">
+                  <input type="button" name="" class="btnVs" value="view">
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100 py-2" id="crd1">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1"><p class="lbCr">My mentors</p></div>
+                      <div class="mb-0 font-weight-bold"><p id="psub">JavaScript</p></div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-user-tie fa-5x text-white"></i>
+                    </div>
+                  </div>
+                </div>
+                <hr class="bg-white">
+                  <input type="button" name="" class="btnVs" value="view">
+              </div>
+            </div>
+          </div>
+ 	</div>
+</div>
+<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer text-center text-white pt-5">
+					<p id="reserved">All rights reserved &copy; 2019 Ageo agnote</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+.mybtnD
+{
+	border:0;
+	border-radius: 25px;
+	height: 25px;
+	outline: none;
+	width: 100px;
+	font-family: 'Calibri';
+	outline: none;
+	font-size: 12px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: white;
+	background-color:  #292F33;
+	transition: box-shadow 0.5s;
+	 background-image: url('../img/ok.png');
+    background-position: 10px 3px;
+    background-size: 20px; 
+    background-repeat: no-repeat;
+    padding-left: 20px;	
+}
+.mybtnD:hover
+{
+	box-shadow: 0 14px 18px 0 rgba(0, 0, 0, 0.2), 0 16px 30px 0 rgba(0, 0, 0, 0.19);
+	border:0;
+	border-radius: 25px;
+	height: 25px;
+	font-family: 'Calibri';
+	outline: none;
+	font-size: 12px;
+	color: white;
+}
+#mybtnDN {
+	outline: none;
+	background-image: url('../img/del.png');
+    background-position: 10px 3px;
+    background-size: 20px; 
+    background-repeat: no-repeat;
+    padding-left: 20px;	
+}
+.modal {
+	background-color: rgba(45,45,45,0.20);
+}
+.prmText {
+	font-family: 'Calibri light';
+	font-size: 12px;
+	color: white;
+}
+#M_dialog {
+	border: 0;
+	box-shadow: 0 14px 18px 0 rgb(32,32,32), 0 16px 30px 0 rgba(0, 0, 0, 0.19);
+}
+#M_dialogc {
+	border: 0;
+	background-color: #C32148;
+}
+
+.prmH {
+	font-family: 'Calibri light';
+	font-size: 35px;
+
+}
